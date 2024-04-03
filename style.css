@@ -36,11 +36,11 @@ body, html {
 
 .button {
     position: absolute;
-    padding: 10px 20px;
+    padding: 20px 40px; /* Увеличен размер кнопок */
     background-color: #ff4500;
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 32px; /* Увеличен размер шрифта кнопок */
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -49,6 +49,11 @@ body, html {
 #about {
     top: 20px;
     left: 20px;
+}
+
+#buy-now { /* Добавлена кнопка Buy Now */
+    top: 20px;
+    right: 20px;
 }
 
 #tokenomics {
@@ -62,9 +67,16 @@ body, html {
 }
 
 @media (max-width: 768px) {
+    .background-video {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
     .button {
-        padding: 5px 10px;
-        font-size: 12px;
+        padding: 10px 20px; /* Адаптированный размер для мобильных устройств */
+        font-size: 16px; /* Адаптированный размер шрифта для мобильных устройств */
     }
 }
 
