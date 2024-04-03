@@ -1,111 +1,56 @@
 body, html {
     height: 100%;
     margin: 0;
-    background-color: black; /* Делаем фон всей страницы черным */
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .background-video-wrapper {
-    position: relative; /* Изменено на relative для центрирования */
-    width: auto; 
-    height: auto;
-    z-index: -1; /* Убедитесь, что видео находится под текстом и кнопками */
+    position: relative;
+    z-index: -1;
 }
 
 .background-video {
-    position: absolute; /* Делаем видео абсолютно позиционированным, чтобы оно было по центру */
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Центрируем видео */
-    min-width: 50%; /* Минимальная ширина видео, может быть адаптирована */
-    min-height: 50%; /* Минимальная высота видео, может быть адаптирована */
+    transform: translate(-50%, -50%);
+    min-width: 50%;
+    min-height: 50%;
 }
 
 .content {
-    position: fixed; /* Используем fixed, чтобы контент всегда оставался видимым поверх видео */
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 2; /* Убедитесь, что контент находится над видео */
+    z-index: 2;
     display: flex;
-    justify-content: space-around; /* Распределение кнопок по странице */
-    align-items: center;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.buy-button {
-    position: absolute;
-    padding: 20px 40px; /* Увеличиваем размеры кнопок */
+.button {
+    padding: 20px 40px;
     background-color: #ff4500;
     color: white;
     text-decoration: none;
-    font-size: 32px; /* Увеличиваем размер шрифта */
+    font-size: 32px;
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-#top-left {
-    top: 20px;
-    left: 20px;
-}
-
-#top-right {
-    top: 20px;
-    right: 20px;
-}
-
-#bottom-left {
-    bottom: 20px;
-    left: 20px;
-}
-
-#bottom-right {
-    bottom: 20px;
-    right: 20px;
-}
-
-.buy-button:hover {
-    background-color: #e03e00;
-}
-/* Адаптивные стили для мобильных устройств */
 @media (max-width: 768px) {
-    .background-video-wrapper {
-        max-width: 100%; /* Позволяет видео заполнять экран на мобильных устройствах */
-        max-height: auto;
+    .button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 10px;
     }
-
-    .background-video {
-        width: auto;
-        height: auto;
-        max-width: 100%;
-        max-height: 100%;
-    }
-
-    .buy-button {
-        padding: 10px 20px; /* Уменьшаем размеры кнопок для мобильных устройств */
-        font-size: 16px; /* Уменьшаем размер шрифта для кнопок */
-        margin: 10px; /* Добавляем немного пространства вокруг кнопок */
-    }
-
-    /* Корректировка позиционирования кнопок, если это необходимо */
-    #top-left, #top-right, #bottom-left, #bottom-right {
-        width: auto; /* Автоматический размер для лучшей адаптации */
-        left: 50%; /* Центрирование кнопок по горизонтали */
-        transform: translateX(-50%); /* Точное центрирование кнопок */
-    }
-
-    #top-left, #top-right {
-        top: 10px; /* Отступ сверху для верхних кнопок */
-    }
-
-    #bottom-left, #bottom-right {
-        bottom: 10px; /* Отступ снизу для нижних кнопок */
-    }
-
-    /* Если требуется, можно добавить специфическое позиционирование для каждой кнопки */
 }
+
 
