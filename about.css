@@ -1,48 +1,59 @@
-/* Основные стили страницы */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: black; /* Фон всей страницы */
+    background-color: black; 
+    font-family: 'Permanent Marker', cursive; 
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Permanent Marker', cursive; /* Забавный и читаемый шрифт */
-    color: white;
     overflow: hidden;
 }
 
-/* Стили контейнера для текста */
 .container {
-    background-color: #ff8c00; /* Цвет фона контейнера - оранжевый */
-    border-radius: 50%; /* Закругление для создания формы кляксы */
-    padding: 40px; /* Внутренние отступы, чтобы текст не касался краев */
-    margin: 20px; /* Отступы для центрирования контейнера */
-    width: 100vw; /* Ширина контейнера относительно ширины вьюпорта */
-    height: 90vh; /* Высота контейнера относительно высоты вьюпорта */
-    max-width: 70px; /* Максимальная ширина контейнера */
-    max-height: 500px; /* Максимальная высота контейнера */
+    background-color: #ff8c00; 
+    border-radius: 50%/20%; /* Сохраняем кляксу, но регулируем форму */
+    padding: 40px; 
+    margin: 20px; 
+    width: auto; /* Делаем ширину автоматической */
+    max-width: 90%; /* Ограничиваем максимальную ширину */
+    min-height: 50vh; /* Минимальная высота, чтобы вместить весь текст */
+    text-align: center; 
+    overflow: hidden; 
+    position: relative; 
+    z-index: 2; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Центрирование текста по вертикали */
-    text-align: center; /* Центрирование текста по горизонтали */
-    overflow: hidden; /* Предотвращение выхода текста за пределы контейнера */
-    position: relative; /* Позиционирование относительно нормального потока */
-    z-index: 2; /* Убедитесь, что текстовый контейнер находится над кнопками */
+    justify-content: center;
 }
 
-/* Стилизация кнопок */
+h1, h2, p:before {
+    font-weight: bold; /* Делаем текст жирным */
+    font-style: italic; /* Добавляем курсив */
+    display: block; /* Заголовки и элементы перед ::before отображаются как блочные */
+}
+
+p {
+    margin: 20px 0; /* Добавляем вертикальные отступы для абзацев */
+    line-height: 1.5; /* Улучшаем читаемость за счет межстрочного интервала */
+}
+
+p:before {
+    content: ""; /* Для демонстрации, как выделить текст перед двоеточием, потребуется дополнительная работа */
+}
+
 .button {
     padding: 10px 20px;
-    background-color: #ff4500; /* Оранжевый фон кнопок */
-    color: white;
-    text-decoration: none;
-    font-family: 'Permanent Marker', cursive; /* Шрифт, аналогичный основному тексту */
-    font-size: 16px;
-    border: none;
-    border-radius: 5px; /* Скругление углов кнопок */
-    position: fixed; /* Фиксированное позиционирование для размещения в углах */
-    transition: background-color 0.3s ease;
+    background-color: #ff4500; 
+    color: white; 
+    text-decoration: none; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    position: fixed; 
+    transition: background-color 0.3s ease; 
+    font-family: 'Permanent Marker', cursive; 
 }
 
 #home {
@@ -67,12 +78,11 @@ body, html {
 
 @media (max-width: 768px) {
     .container {
-        width: 90vw; /* Увеличение ширины контейнера на мобильных устройствах */
-        height: 70vh; /* Увеличение высоты контейнера на мобильных устройствах */
-        padding: 20px; /* Уменьшение отступов для большего пространства текста */
+        padding: 20px; 
+        margin: 10px; 
     }
 
     .button {
-        font-size: 14px; /* Уменьшение размера шрифта кнопок для мобильных устройств */
+        font-size: 14px; 
     }
 }
