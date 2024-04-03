@@ -6,20 +6,20 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Permanent Marker', cursive; /* Обновленный шрифт */
+    font-family: 'Permanent Marker', cursive;
     color: white;
 }
 
 .container {
     max-width: 800px;
     background-color: #ff8c00;
-    border-radius: 50%/20%; /* Создает эффект кляксы */
+    border-radius: 50%/20%;
     padding: 40px;
     margin: 40px auto;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 1;
-    transform: rotate(-5deg); /* Слегка поворачиваем контейнер для эффекта небрежности */
+    transform: rotate(-5deg);
 }
 
 .button {
@@ -35,7 +35,7 @@ body, html {
     font-family: 'Permanent Marker', cursive;
 }
 
-#about {
+#home {
     top: 20px;
     left: 20px;
 }
@@ -55,43 +55,15 @@ body, html {
     right: 20px;
 }
 
-h1, h2 {
-    color: white;
-    text-align: center;
-}
-
-p, li {
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li::before {
-    content: '•';
-    color: white;
-    font-size: 24px;
-}
-
-.raccoon-image {
-    display: block;
-    max-width: 50%; /* Уменьшаем изображение */
-    height: auto;
-    margin: 20px auto;
-    border-radius: 10px;
-}
-
 @media (max-width: 768px) {
-    .container {
-        padding: 20px;
-        margin: 20px;
-        transform: rotate(0deg); /* На мобильных устройствах контейнер не поворачиваем */
+    .button {
+        padding: 5px 10px;
+        font-size: 12px;
     }
 
-    .button {
-        font-size: 12px;
+    .container {
+        margin: 20px;
+        padding: 20px;
+        transform: rotate(0deg);
     }
 }
