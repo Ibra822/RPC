@@ -14,17 +14,18 @@ body, html {
     left: 0;
     right: 0;
     bottom: 0;
+    display: flex;
+    justify-content: center; /* Центрируем видео по горизонтали */
+    align-items: center; /* Центрируем видео по вертикали */
     z-index: -1;
+    overflow: hidden; /* Обрезаем видео, выходящее за пределы контейнера */
 }
 
 .background-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
+    /* Убираем абсолютное позиционирование */
+    max-width: 75%; /* Пример уменьшения размера видео до 75% от ширины экрана */
+    max-height: 75%; /* Уменьшение по высоте, если нужно */
+    object-fit: cover; /* Сохраняем пропорции видео */
 }
 
 .content {
