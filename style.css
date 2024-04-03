@@ -71,4 +71,41 @@ body, html {
 .buy-button:hover {
     background-color: #e03e00;
 }
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 768px) {
+    .background-video-wrapper {
+        max-width: 100%; /* Позволяет видео заполнять экран на мобильных устройствах */
+        max-height: auto;
+    }
+
+    .background-video {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .buy-button {
+        padding: 10px 20px; /* Уменьшаем размеры кнопок для мобильных устройств */
+        font-size: 16px; /* Уменьшаем размер шрифта для кнопок */
+        margin: 10px; /* Добавляем немного пространства вокруг кнопок */
+    }
+
+    /* Корректировка позиционирования кнопок, если это необходимо */
+    #top-left, #top-right, #bottom-left, #bottom-right {
+        width: auto; /* Автоматический размер для лучшей адаптации */
+        left: 50%; /* Центрирование кнопок по горизонтали */
+        transform: translateX(-50%); /* Точное центрирование кнопок */
+    }
+
+    #top-left, #top-right {
+        top: 10px; /* Отступ сверху для верхних кнопок */
+    }
+
+    #bottom-left, #bottom-right {
+        bottom: 10px; /* Отступ снизу для нижних кнопок */
+    }
+
+    /* Если требуется, можно добавить специфическое позиционирование для каждой кнопки */
+}
 
