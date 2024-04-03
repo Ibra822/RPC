@@ -1,0 +1,103 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    background-color: #ff8c00;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative; /* Добавлено для позиционирования кнопок */
+    z-index: 1; /* Убедитесь, что контейнер находится над кнопками */
+}
+
+/* Стили кнопок */
+.button {
+    position: fixed; /* Используем fixed для позиционирования кнопок в углах */
+    padding: 10px 20px;
+    background-color: #ff4500;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#about {
+    top: 20px;
+    left: 20px;
+}
+
+#buy-now {
+    top: 20px;
+    right: 20px;
+}
+
+#tokenomics {
+    bottom: 20px;
+    left: 20px;
+}
+
+#how-to-buy {
+    bottom: 20px;
+    right: 20px;
+}
+
+h1, h2 {
+    color: white;
+    text-align: center;
+}
+
+p, li {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li::before {
+    content: '•';
+    color: white;
+    font-size: 24px;
+}
+
+.raccoon-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .background-video {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
