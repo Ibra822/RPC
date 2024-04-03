@@ -2,68 +2,69 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: black;
+    background-color: black; /* Фон всей страницы */
+    font-family: 'Permanent Marker', cursive; /* Общий шрифт для страницы */
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Permanent Marker', cursive;
-    color: white;
+    overflow: hidden;
 }
 
 .container {
-    max-width: 800px;
-    background-color: #ff8c00;
-    border-radius: 50%/20%;
-    padding: 40px;
-    margin: 40px auto;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    position: relative;
+    max-width: 800px; /* Ограничение ширины контейнера для текста */
+    background-color: #ff8c00; /* Оранжевый фон контейнера */
+    border-radius: 20px; /* Скругление углов контейнера */
+    padding: 20px; /* Внутренние отступы */
+    margin: 20px; /* Внешние отступы для центрирования */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Тень для контейнера */
+    position: relative; /* Необходимо для позиционирования внутренних элементов */
     z-index: 1;
-    transform: rotate(-5deg);
 }
 
 .button {
-    position: fixed;
-    padding: 10px 20px;
-    background-color: #ff4500;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    font-family: 'Permanent Marker', cursive;
+    padding: 10px 20px; /* Отступы внутри кнопок */
+    background-color: #ff4500; /* Фон кнопок */
+    color: white; /* Цвет текста кнопок */
+    text-decoration: none; /* Убрать подчеркивание текста */
+    font-size: 16px; /* Размер текста */
+    border: none; /* Убрать границы */
+    border-radius: 5px; /* Скругление углов кнопок */
+    transition: background-color 0.3s ease; /* Плавное изменение фона при наведении */
+    font-family: 'Permanent Marker', cursive; /* Шрифт текста кнопок */
+    position: fixed; /* Фиксированное позиционирование для кнопок */
 }
 
 #home {
     top: 20px;
-    left: 20px;
+    left: 20px; /* Позиционирование кнопки Home в левом верхнем углу */
+}
+
+#buy-now, #tokenomics, #how-to-buy {
+    /* Позиционирование остальных кнопок по углам страницы */
+    bottom: 20px; /* Отступ снизу для нижних кнопок */
 }
 
 #buy-now {
-    top: 20px;
-    right: 20px;
+    right: 20px; /* Позиционирование кнопки Buy Now в правом нижнем углу */
 }
 
 #tokenomics {
-    bottom: 20px;
-    left: 20px;
+    left: 20px; /* Позиционирование кнопки Tokenomics в левом нижнем углу */
 }
 
 #how-to-buy {
-    bottom: 20px;
-    right: 20px;
+    right: 20px; /* Позиционирование кнопки How to Buy в правом нижнем углу */
 }
 
 @media (max-width: 768px) {
     .button {
-        padding: 5px 10px;
-        font-size: 12px;
+        font-size: 12px; /* Уменьшение размера текста кнопок для мобильных устройств */
     }
 
     .container {
-        margin: 20px;
-        padding: 20px;
-        transform: rotate(0deg);
+        margin: 10px; /* Уменьшение внешних отступов контейнера */
+        padding: 10px; /* Уменьшение внутренних отступов контейнера */
     }
 }
+
