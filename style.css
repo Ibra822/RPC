@@ -1,32 +1,37 @@
 body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial, sans-serif;
+    background-color: black; /* Делаем фон всей страницы черным */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .background-video-wrapper {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    width: auto; /* Изменено с 100% на auto */
-    height: auto; /* Изменено с 100% на auto */
-    max-width: 640px; /* Пример исходного размера видео */
-    max-height: 360px; /* Пример исходного размера видео */
-    overflow: hidden;
+    position: relative; /* Изменено на relative для центрирования */
+    width: auto; 
+    height: auto;
     z-index: -1; /* Убедитесь, что видео находится под текстом и кнопками */
 }
 
 .background-video {
-    max-width: 100%;
-    max-height: 100%;
+    position: absolute; /* Делаем видео абсолютно позиционированным, чтобы оно было по центру */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрируем видео */
+    min-width: 50%; /* Минимальная ширина видео, может быть адаптирована */
+    min-height: 50%; /* Минимальная высота видео, может быть адаптирована */
 }
 
 .content {
-    position: relative;
-    z-index: 2;
-    height: 100%;
+    position: fixed; /* Используем fixed, чтобы контент всегда оставался видимым поверх видео */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2; /* Убедитесь, что контент находится над видео */
     display: flex;
-    justify-content: center;
+    justify-content: space-around; /* Распределение кнопок по странице */
     align-items: center;
     flex-direction: column;
 }
