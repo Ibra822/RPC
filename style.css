@@ -35,11 +35,11 @@ body, html {
 }
 
 .button {
-    padding: 20px 40px;
+    padding: 40px 80px; /* Увеличение размера */
     background-color: #ff4500;
     color: white;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 64px; /* Увеличение шрифта */
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -47,10 +47,8 @@ body, html {
 
 @media (max-width: 768px) {
     .button {
-        padding: 10px 20px;
-        font-size: 16px;
+        padding: 20px 40px; /* Немного меньше для мобильных, но всё равно больше, чем было */
+        font-size: 32px; /* Немного меньше для мобильных, но всё равно больше, чем было */
         margin: 10px;
     }
 }
-
-
