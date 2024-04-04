@@ -2,11 +2,11 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: black;
+    background-color: black; /* Черный фон */
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower', cursive; /* Причудливый шрифт для всего контента */
     color: white;
     overflow: hidden;
 }
@@ -14,35 +14,34 @@ body, html {
 .content-wrapper {
     position: relative;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px; /* Увеличенная максимальная ширина обертки */
     margin: 20px;
 }
 
 .text-box {
-    background-color: #ffa500;
-    padding: 20px;
-    border-radius: 20px; /* Более округлые углы */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    width: 100%; /* Шире бокс */
-    max-width: 800px; /* Максимальная ширина бокса */
+    background-color: #ffa500; /* Оранжевый фон текстового блока */
+    padding: 30px; /* Увеличенные padding */
+    border-radius: 20px; /* Более округлые углы текстового блока */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Тень для текстового блока */
+    text-align: left; /* Выравнивание текста по левому краю */
 }
 
 .back-button {
     position: absolute;
-    top: -50px;
-    left: 20px; /* Сдвигаем к левому краю */
+    top: 0;
+    left: 0;
     padding: 10px 15px;
-    background-color: #ff4500;
+    background-color: #ff4500; /* Оранжевый фон кнопки 'Back' */
     color: white;
     text-decoration: none;
     border-radius: 5px;
     font-family: 'Indie Flower', cursive;
-    z-index: 10; /* Убедимся, что кнопка будет видна над другими элементами */
+    z-index: 10; /* Убедимся, что кнопка находится над другими элементами */
 }
 
 h1, .highlight {
-    color: #FFFFFF;
-    font-weight: bold;
+    color: #FFFFFF; /* Цвет текста заголовка и выделенных элементов */
+    font-weight: bold; /* Жирное начертание */
 }
 
 @media (max-width: 768px) {
@@ -51,17 +50,19 @@ h1, .highlight {
     }
 
     .text-box {
-        padding: 15px;
-        max-width: 90%; /* Уменьшаем максимальную ширину для мобильных */
+        padding: 20px; /* Меньше padding на мобильных устройствах */
+        border-radius: 15px; /* Меньшие закругления углов */
     }
 
     .back-button {
-        top: 10px; /* Позиционируем кнопку выше текстового блока */
-        left: 10px; /* Ближе к левому краю */
-        font-size: 14px;
+        font-size: 14px; /* Уменьшаем размер шрифта кнопки 'Back' */
     }
 
-    h1, h2, p, ul, li {
-        font-size: 4vw; /* Адаптивный размер шрифта */
+    h1, h2 {
+        font-size: 6vw; /* Адаптивный размер шрифта для заголовков */
+    }
+
+    p, ul, li {
+        font-size: 4.5vw; /* Адаптивный размер шрифта для основного текста */
     }
 }
