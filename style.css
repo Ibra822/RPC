@@ -36,27 +36,29 @@ body, html {
 }
 
 .paw-button {
-    display: inline-block;
-    background-image: url('paw.webp'); /* Убедитесь, что путь к изображению верен */
-    background-size: cover; /* Или 'contain', в зависимости от того, как вы хотите отобразить изображение */
-    width: 250px; /* Увеличенный размер */
-    height: 250px; /* Увеличенный размер */
-    text-align: center;
-    line-height: 200px; /* Адаптируйте это значение, чтобы текст был вертикально центрирован */
-    color: white; /* Цвет текста */
-    text-decoration: none; /* Убираем подчеркивание текста */
-    font-family:'Fredoka One', cursive; /* Используем ваш предпочтительный шрифт */
-    font-size: 20px; /* Размер шрифта текста внутри лапки */
-    position: absolute; /* Позиционирование элемента */
-    transition: transform 0.3s ease; /* Анимация для увеличения при наведении */
+    display: inline-flex; /* Изменено на inline-flex для лучшего позиционирования текста */
+    justify-content: center; /* Центрирование содержимого по горизонтали */
+    align-items: center; /* Центрирование содержимого по вертикали */
+    background-image: url('paw.webp');
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    transition: transform 0.3s ease;
+    text-decoration: none;
 }
 
-/* Позиционирование кнопок в углах */
-#about { top: 20px; left: 20px; }
-#buy-now { top: 20px; right: 20px; }
-#tokenomics { bottom: 20px; left: 20px; }
-#how-to-buy { bottom: 20px; right: 20px; }
-/* Анимация увеличения при наведении */
+.button-text {
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    position: relative; /* Делаем текст относительно позиционированным */
+    top: 25%; /* Сдвигаем текст на 25% вниз от его текущего положения */
+    transform: translateY(-50%); /* Корректируем позиционирование, чтобы текст оставался центрированным относительно своего нового положения */
+    display: inline-block; /* Указываем, что элемент должен вести себя как блочно-строчный */
+    text-align: center; /* Центрирование текста */
+    width: 100%; /* Указываем ширину, чтобы текст мог центрироваться */
+}
 
 .paw-button:hover {
     transform: scale(1.1);
