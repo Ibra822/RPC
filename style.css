@@ -37,7 +37,7 @@ body, html {
 
 .paw-button {
     display: inline-block;
-    background-image: url('path_to_your_paw_print_image.png'); /* Убедитесь, что путь к изображению верен */
+    background-image: url('paw.webp'); /* Убедитесь, что путь к изображению верен */
     background-size: cover; /* Или 'contain', в зависимости от того, как вы хотите отобразить изображение */
     width: 150px; /* Увеличенный размер */
     height: 150px; /* Увеличенный размер */
