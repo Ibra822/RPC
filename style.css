@@ -35,15 +35,20 @@ body, html {
     z-index: 2;
 }
 
-.button {
+.paw-button {
     position: absolute;
-    padding: 20px 40px; /* Увеличен размер кнопок */
-    background-color: #ff4500;
+    width: 100px; /* Размеры следа енота */
+    height: 100px; /* Размеры следа енота */
+    background-image: url('paw.webp'); /* Укажите путь к вашему изображению следа енота */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     text-decoration: none;
-    font-size: 32px; /* Увеличен размер шрифта кнопок */
+    font-size: 16px; /* Подстройте размер шрифта внутри кнопки */
     border: none;
-    border-radius: 5px;
+    border-radius: 50%; /* Округлость кнопки, если нужно */
     transition: background-color 0.3s ease;
 }
 
@@ -52,7 +57,7 @@ body, html {
     left: 20px;
 }
 
-#buy-now { /* Добавлена кнопка Buy Now */
+#buy-now {
     top: 20px;
     right: 20px;
 }
@@ -66,6 +71,7 @@ body, html {
     bottom: 20px;
     right: 20px;
 }
+
 
 @media (max-width: 768px) {
     .background-video {
