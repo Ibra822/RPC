@@ -36,29 +36,35 @@ body, html {
 }
 
 .paw-button {
-    display: inline-flex; /* Изменено на inline-flex для лучшего позиционирования текста */
-    justify-content: center; /* Центрирование содержимого по горизонтали */
-    align-items: center; /* Центрирование содержимого по вертикали */
+    display: inline-block;
     background-image: url('paw.webp');
     background-size: cover;
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    transition: transform 0.3s ease;
+    width: 200px; /* Увеличенный размер */
+    height: 200px; /* Увеличенный размер */
+    text-align: center;
+    line-height: 200px; /* Вертикальное центрирование может потребовать корректировки */
+    color: white;
     text-decoration: none;
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px; /* Размер шрифта текста внутри лапки */
+    position: absolute; /* Позиционирование элемента */
+    transition: transform 0.3s ease;
 }
 
 .button-text {
-    color: white;
-    font-family: 'Fredoka One', cursive;
-    font-size: 20px;
-    position: relative; /* Делаем текст относительно позиционированным */
-    top: 25%; /* Сдвигаем текст на 25% вниз от его текущего положения */
-    transform: translateY(-50%); /* Корректируем позиционирование, чтобы текст оставался центрированным относительно своего нового положения */
-    display: inline-block; /* Указываем, что элемент должен вести себя как блочно-строчный */
-    text-align: center; /* Центрирование текста */
-    width: 100%; /* Указываем ширину, чтобы текст мог центрироваться */
+    position: relative;
+    top: 25%; /* Сдвигаем текст ниже от его центрального положения */
+    transform: translateY(-50%);
+    display: inline-block;
+    text-align: center;
+    width: 100%;
 }
+
+/* Позиционирование кнопок в углах остается без изменений */
+#about { top: 20px; left: 20px; }
+#buy-now { top: 20px; right: 20px; }
+#tokenomics { bottom: 20px; left: 20px; }
+#how-to-buy { bottom: 20px; right: 20px; }
 
 .paw-button:hover {
     transform: scale(1.1);
