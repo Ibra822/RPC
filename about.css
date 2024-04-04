@@ -2,71 +2,76 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: black; /* Черный фон */
+    background-color: black;
+    font-family: 'Indie Flower', cursive;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Indie Flower', cursive; /* Причудливый шрифт для всего контента */
-    color: white;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .content-wrapper {
     position: relative;
     width: 100%;
-    max-width: 900px; /* Увеличенная максимальная ширина обертки */
-    margin: 20px;
+    max-width: 800px;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .text-box {
-    background-color: #ffa500; /* Оранжевый фон текстового блока */
-    padding: 30px; /* Увеличенные padding */
-    border-radius: 20px; /* Более округлые углы текстового блока */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Тень для текстового блока */
-    text-align: left; /* Выравнивание текста по левому краю */
+    background-color: #ffa500;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+    text-align: left;
+    overflow: auto; /* Добавлено для возможности прокрутки */
 }
 
 .back-button {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 1rem;
+    left: 1rem;
     padding: 10px 15px;
-    background-color: #ff4500; /* Оранжевый фон кнопки 'Back' */
+    background-color: #ff4500;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     font-family: 'Indie Flower', cursive;
-    z-index: 10; /* Убедимся, что кнопка находится над другими элементами */
+    z-index: 10;
 }
 
-h1, .highlight {
-    color: #FFFFFF; /* Цвет текста заголовка и выделенных элементов */
-    font-weight: bold; /* Жирное начертание */
+h1, h2, .highlight {
+    font-family: 'Game On', cursive;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+p, ul, li {
+    font-family: 'Cheesecake', cursive;
+    font-weight: normal;
+    color: #333333;
+    margin-bottom: 0.5rem;
 }
 
 @media (max-width: 768px) {
-    .content-wrapper {
-        max-width: 85%; /* Чуть более узкий контейнер для пространства по краям */
-        margin: 5%; /* Отступы по краям для центрирования контейнера */
-    }
-
     .text-box {
-        padding: 15px; /* Меньший padding внутри текстового блока для большего места текста */
-        border-radius: 15px; /* Слегка закругленные углы текстового блока */
-        font-size: 4.5vw; /* Адаптивный размер шрифта для основного текста */
+        padding: 15px;
+        margin-top: 3rem; /* Добавляем пространство для верхней кнопки */
+        border-radius: 20px;
     }
 
-    .back-button {
-        font-size: 4vw; /* Уменьшенный размер шрифта для кнопки 'Back' */
-        top: 3%; /* Смещение вверх, чтобы не перекрывать текст */
-        left: 3%; /* Смещение влево, чтобы быть видимой на фоне контейнера */
-    }
-
-    h1, .highlight {
-        font-size: 5vw; /* Увеличенный размер шрифта для заголовков и выделенного текста */
+    h1, h2, .highlight {
+        font-size: 5vw; /* Уменьшаем размер шрифта для заголовков */
     }
 
     p, ul, li {
-        font-size: 3.5vw; /* Уменьшенный размер шрифта для остального текста */
+        font-size: 4vw; /* Уменьшаем размер шрифта для текста */
+    }
+
+    .back-button {
+        font-size: 4vw;
     }
 }
