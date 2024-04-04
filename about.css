@@ -2,76 +2,57 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: black;
+    background-color: black; /* Черный фон */
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
-    font-family: 'Comic Neue', cursive;
-}
-
-.container {
-    background-color: #ff8c00;
-    border-radius: 10%; /* Слегка закругленные углы для мягкого вида */
-    margin: 5%;
-    padding: 5%;
-    width: auto; /* Ширина подстраивается под контент */
-    max-width: 80%; /* Максимальная ширина ограничивается для лучшей читаемости */
-    box-sizing: border-box; /* Padding включается в общую ширину и высоту */
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    font-family: 'Indie Flower', cursive; /* Причудливый шрифт для всего контента */
+    color: white;
     overflow: hidden;
 }
 
+.content-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Максимальная ширина обертки */
+    margin: 20px;
+}
+
+.text-box {
+    background-color: #ffa500; /* Оранжевый фон текстового блока */
+    padding: 20px;
+    border-radius: 10px; /* Скругление углов текстового блока */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Тень для текстового блока */
+}
+
 .back-button {
-    font-family: 'Fredoka One', cursive;
     position: absolute;
-    top: 2%;
-    left: 2%;
-    padding: 8px 16px;
-    background-color: #ff4500;
+    top: -50px; /* Позиционируем выше текстового блока */
+    left: 0;
+    padding: 10px 15px;
+    background-color: #ff4500; /* Оранжевый фон кнопки 'Back' */
     color: white;
     text-decoration: none;
-    border: none;
     border-radius: 5px;
-    font-size: 4vw; /* Responsive font size */
-    z-index: 3;
+    font-family: 'Indie Flower', cursive;
 }
 
-h1, h2, .highlight {
-    font-family: 'Fredoka One', cursive;
-    color: #FFFFFF;
-    font-weight: normal;
-}
-
-p, ul, li {
-    font-family: 'Comic Neue', cursive;
-    color: #333333;
-    font-size: 4vw; /* Responsive font size for better readability on small screens */
+h1, .highlight {
+    color: #FFFFFF; /* Цвет текста заголовка и выделенных элементов */
+    font-weight: bold; /* Жирное начертание */
 }
 
 @media (max-width: 768px) {
-    .container {
-        margin: 5%;
-        padding: 5%;
-        max-width: 90%; /* Increase max width for small screens */
+    .content-wrapper {
+        margin: 10px;
     }
 
     .back-button {
-        font-size: 5vw; /* Increase font size for visibility on small screens */
+        top: -40px; /* Сдвигаем выше на мобильных устройствах */
+        font-size: 14px; /* Уменьшаем размер шрифта кнопки 'Back' */
     }
 
-    h1, h2 {
-        font-size: 6vw; /* Increase font size for headings on small screens */
-    }
-
-    p, ul, li {
-        font-size: 4.5vw; /* Slightly increase font size for text on small screens */
+    .text-box {
+        padding: 15px;
     }
 }
-
