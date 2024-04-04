@@ -45,7 +45,7 @@ body, html {
     line-height: 180px; /* Адаптируйте это значение, чтобы текст был вертикально центрирован */
     color: white; /* Цвет текста */
     text-decoration: none; /* Убираем подчеркивание текста */
-    font-family: 'Indie Flower', cursive; /* Используем ваш предпочтительный шрифт */
+    font-family:'Fredoka One', cursive; /* Используем ваш предпочтительный шрифт */
     font-size: 20px; /* Размер шрифта текста внутри лапки */
     position: absolute; /* Позиционирование элемента */
     transition: transform 0.3s ease; /* Анимация для увеличения при наведении */
