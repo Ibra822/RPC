@@ -36,42 +36,32 @@ body, html {
 }
 
 .paw-button {
-    position: absolute;
-    width: 100px; /* Размеры следа енота */
-    height: 100px; /* Размеры следа енота */
-    background-image: url('paw.webp'); /* Укажите путь к вашему изображению следа енота */
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-decoration: none;
-    font-size: 16px; /* Подстройте размер шрифта внутри кнопки */
-    border: none;
-    border-radius: 50%; /* Округлость кнопки, если нужно */
-    transition: background-color 0.3s ease;
+    display: inline-block;
+    background-image: url('path_to_your_paw_print_image.png'); /* Убедитесь, что путь к изображению верен */
+    background-size: cover; /* Или 'contain', в зависимости от того, как вы хотите отобразить изображение */
+    width: 150px; /* Увеличенный размер */
+    height: 150px; /* Увеличенный размер */
+    text-align: center;
+    line-height: 150px; /* Адаптируйте это значение, чтобы текст был вертикально центрирован */
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    font-family: 'Indie Flower', cursive; /* Используем ваш предпочтительный шрифт */
+    font-size: 20px; /* Размер шрифта текста внутри лапки */
+    position: absolute; /* Позиционирование элемента */
+    transition: transform 0.3s ease; /* Анимация для увеличения при наведении */
 }
 
-#about {
-    top: 20px;
-    left: 20px;
-}
+/* Позиционирование кнопок в углах */
+#about { top: 20px; left: 20px; }
+#buy-now { top: 20px; right: 20px; }
+#tokenomics { bottom: 20px; left: 20px; }
+#how-to-buy { bottom: 20px; right: 20px; }
 
-#buy-now {
-    top: 20px;
-    right: 20px;
+/* Анимация увеличения при наведении */
+.paw-button:hover {
+    transform: scale(1.1);
+    cursor: pointer; /* Чтобы показать, что элемент кликабельный */
 }
-
-#tokenomics {
-    bottom: 20px;
-    left: 20px;
-}
-
-#how-to-buy {
-    bottom: 20px;
-    right: 20px;
-}
-
 
 @media (max-width: 768px) {
     .background-video {
