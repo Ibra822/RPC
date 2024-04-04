@@ -36,26 +36,28 @@ body, html {
 }
 
 .paw-button {
-    display: inline-flex; /* Изменено на inline-flex для лучшего позиционирования текста */
-    justify-content: center; /* Центрирование содержимого по горизонтали */
-    align-items: center; /* Центрирование содержимого по вертикали */
-    background-image: url('paw.webp');
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    transition: transform 0.3s ease;
-    text-decoration: none;
+    display: inline-block;
+    background-image: url('paw.webp'); /* Убедитесь, что путь к изображению верен */
+    background-size: cover; /* Или 'contain', в зависимости от того, как вы хотите отобразить изображение */
+    width: 250px; /* Увеличенный размер */
+    height: 250px; /* Увеличенный размер */
+    text-align: center;
+    line-height: 200px; /* Адаптируйте это значение, чтобы текст был вертикально центрирован */
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    font-family:'Fredoka One', cursive; /* Используем ваш предпочтительный шрифт */
+    font-size: 20px; /* Размер шрифта текста внутри лапки */
+    position: absolute; /* Позиционирование элемента */
+    transition: transform 0.3s ease; /* Анимация для увеличения при наведении */
 }
 
-.button-text {
-    color: white;
-    font-family: 'Fredoka One', cursive;
-    font-size: 20px; /* Может потребоваться корректировка в зависимости от размера лапки */
-    text-align: center;
-    /* Добавьте необходимые padding и margin, если текст нужно сместить внутри изображения */
-}
+/* Позиционирование кнопок в углах */
+#about { top: 20px; left: 20px; }
+#buy-now { top: 20px; right: 20px; }
+#tokenomics { bottom: 20px; left: 20px; }
+#how-to-buy { bottom: 20px; right: 20px; }
 /* Анимация увеличения при наведении */
+
 .paw-button:hover {
     transform: scale(1.1);
     cursor: pointer; /* Чтобы показать, что элемент кликабельный */
