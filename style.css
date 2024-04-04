@@ -39,8 +39,8 @@ body, html {
     display: inline-block;
     background-image: url('paw.webp'); /* Убедитесь, что путь к изображению верен */
     background-size: cover; /* Или 'contain', в зависимости от того, как вы хотите отобразить изображение */
-    width: 200px; /* Увеличенный размер */
-    height: 200px; /* Увеличенный размер */
+    width: 250px; /* Увеличенный размер */
+    height: 250px; /* Увеличенный размер */
     text-align: center;
     line-height: 200px; /* Адаптируйте это значение, чтобы текст был вертикально центрирован */
     color: white; /* Цвет текста */
