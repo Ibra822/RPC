@@ -6,16 +6,18 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow-x: hidden;
+    font-family: 'Comic Neue', cursive;
 }
 
 .container {
     background-color: #ff8c00;
-    border-radius: 20px;
-    margin: 20px;
-    padding: 40px;
-    max-width: 600px;
-    box-sizing: border-box;
+    border-radius: 10%; /* Слегка закругленные углы для мягкого вида */
+    margin: 5%;
+    padding: 5%;
+    width: auto; /* Ширина подстраивается под контент */
+    max-width: 80%; /* Максимальная ширина ограничивается для лучшей читаемости */
+    box-sizing: border-box; /* Padding включается в общую ширину и высоту */
     position: relative;
     z-index: 2;
     display: flex;
@@ -23,51 +25,53 @@ body, html {
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .back-button {
-    font-family: 'Game On', cursive;
+    font-family: 'Fredoka One', cursive;
     position: absolute;
-    top: 20px;
-    left: 20px;
-    padding: 10px 15px;
+    top: 2%;
+    left: 2%;
+    padding: 8px 16px;
     background-color: #ff4500;
     color: white;
     text-decoration: none;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 4vw; /* Responsive font size */
+    z-index: 3;
 }
 
 h1, h2, .highlight {
-    font-family: 'Game On', cursive;
-    font-weight: bold;
+    font-family: 'Fredoka One', cursive;
     color: #FFFFFF;
+    font-weight: normal;
 }
 
 p, ul, li {
-    font-family: 'Cheesecake', cursive;
-    font-weight: normal;
+    font-family: 'Comic Neue', cursive;
     color: #333333;
+    font-size: 4vw; /* Responsive font size for better readability on small screens */
 }
 
 @media (max-width: 768px) {
     .container {
-        max-width: 90%;
-        padding: 20px;
+        margin: 5%;
+        padding: 5%;
+        max-width: 90%; /* Increase max width for small screens */
     }
 
     .back-button {
-        font-size: 14px;
+        font-size: 5vw; /* Increase font size for visibility on small screens */
     }
 
     h1, h2 {
-        font-size: 5vw;
+        font-size: 6vw; /* Increase font size for headings on small screens */
     }
 
     p, ul, li {
-        font-size: 4vw;
+        font-size: 4.5vw; /* Slightly increase font size for text on small screens */
     }
 }
-
 
