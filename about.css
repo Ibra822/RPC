@@ -22,18 +22,18 @@ body, html {
     position: relative;
     z-index: 2;
     transform: rotate(-2deg); /* Легкий наклон для стилизации */
+    font-family: 'Open Sans', sans-serif; /* Обновляем шрифт основного текста */
 }
 
 h1, h2 {
-    font-family: 'Permanent Marker', cursive;
-    font-weight: bold;
-    font-style: italic;
+    font-family: 'Permanent Marker', cursive; /* Держим этот шрифт для заголовков */
+    font-weight: bold; /* Жирное начертание для заголовков */
 }
 
-p, ul {
-    font-size: 1em; /* Используем единицу em для адаптивности */
-    line-height: 1.4;
-    margin: 1em 0;
+p, ul, li {
+    font-weight: 400; /* Обычное начертание для текста */
+    font-style: italic; /* Курсив для добавления выразительности */
+    color: #333; /* Темно-серый цвет для улучшения контраста на оранжевом фоне */
 }
 
 .button {
