@@ -39,14 +39,14 @@ body, html {
     display: inline-block;
     background-image: url('paw.webp');
     background-size: cover;
-    width: 200px; /* Увеличенный размер */
-    height: 200px; /* Увеличенный размер */
+    width: 270px; /* Увеличенный размер */
+    height: 270px; /* Увеличенный размер */
     text-align: center;
     line-height: 200px; /* Вертикальное центрирование может потребовать корректировки */
     color: white;
     text-decoration: none;
     font-family: 'Fredoka One', cursive;
-    font-size: 20px; /* Размер шрифта текста внутри лапки */
+    font-size: 18px; /* Размер шрифта текста внутри лапки */
     position: absolute; /* Позиционирование элемента */
     transition: transform 0.3s ease;
 }
