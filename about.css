@@ -8,66 +8,60 @@ body, html {
     align-items: center;
     font-family: 'Indie Flower', cursive;
     color: white;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .content-wrapper {
     position: relative;
     width: 100%;
-    max-width: 900px; /* Увеличиваем ширину обертки */
-    padding: 20px;
+    max-width: 800px;
+    margin: 20px;
 }
 
 .text-box {
     background-color: #ffa500;
-    padding: 30px; /* Увеличиваем padding */
+    padding: 20px;
     border-radius: 20px; /* Более округлые углы */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    position: relative;
-    z-index: 1;
+    width: 100%; /* Шире бокс */
+    max-width: 800px; /* Максимальная ширина бокса */
 }
 
 .back-button {
-    font-family: 'Indie Flower', cursive;
     position: absolute;
-    top: -45px; /* Расположение над текстовым блоком */
-    left: 20px; /* Слегка отступаем от края */
+    top: -50px;
+    left: 20px; /* Сдвигаем к левому краю */
     padding: 10px 15px;
     background-color: #ff4500;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    z-index: 2;
+    font-family: 'Indie Flower', cursive;
+    z-index: 10; /* Убедимся, что кнопка будет видна над другими элементами */
 }
 
 h1, .highlight {
+    color: #FFFFFF;
     font-weight: bold;
-    color: white;
 }
 
 @media (max-width: 768px) {
     .content-wrapper {
-        padding: 0; /* Уменьшаем padding для большего использования пространства */
+        margin: 10px;
     }
-    
+
     .text-box {
-        padding: 15px; /* Меньший padding внутри бокса */
-        border-radius: 15px; /* Немного уменьшаем скругление */
-        max-width: 95%; /* Увеличиваем ширину для максимального использования пространства */
-        box-sizing: border-box;
+        padding: 15px;
+        max-width: 90%; /* Уменьшаем максимальную ширину для мобильных */
     }
-    
+
     .back-button {
-        top: 10px; /* Ставим кнопку вверху экрана */
-        left: 10px; /* Отодвигаем от края на 10px */
-        font-size: 3.5vw; /* Уменьшаем шрифт, чтобы кнопка не занимала много места */
+        top: 10px; /* Позиционируем кнопку выше текстового блока */
+        left: 10px; /* Ближе к левому краю */
+        font-size: 14px;
     }
 
-    h1, h2 {
-        font-size: 5vw; /* Адаптивный размер шрифта для заголовков */
-    }
-
-    p, ul, li {
-        font-size: 4vw; /* Адаптивный размер шрифта для текста */
+    h1, h2, p, ul, li {
+        font-size: 4vw; /* Адаптивный размер шрифта */
     }
 }
