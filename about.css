@@ -13,30 +13,21 @@ body, html {
 
 .container {
     background-color: #ff8c00;
-    border-radius: 30% / 50%; /* Изменение формы для вытягивания контейнера вверх и вниз */
-    padding: 20px;
-    width: 80vw; /* Уменьшение ширины для создания более вытянутой формы */
-    height: 75vh; /* Увеличение высоты для расширения текста вверх и вниз */
+    border-radius: 25%; /* Менее экстремальная форма для всех устройств */
+    margin: 20px;
+    padding: 5%; /* Процентные отступы для адаптивности */
+    width: auto; /* Автоматическая ширина для адаптивности */
+    max-width: 600px; /* Максимальная ширина для десктопов */
+    min-height: 300px; /* Минимальная высота для сохранения формы */
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     overflow: hidden;
     position: relative;
     z-index: 2;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    margin: 20px;
-}
-
-h1, h2 {
-    font-weight: bold;
-    font-style: italic;
-}
-
-p, ul {
-    font-size: 18px;
-    line-height: 1.5;
-    margin: 20px 0;
+    transform: rotate(-2deg); /* Небольшой поворот для добавления динамики */
 }
 
 .button {
@@ -52,34 +43,22 @@ p, ul {
     font-family: 'Permanent Marker', cursive;
 }
 
-#home {
-    top: 20px;
-    left: 20px;
-}
-
-#buy-now {
-    top: 20px;
-    right: 20px;
-}
-
-#tokenomics {
-    bottom: 20px;
-    left: 20px;
-}
-
-#how-to-buy {
-    bottom: 20px;
-    right: 20px;
-}
+#home { top: 20px; left: 20px; }
+#buy-now { top: 20px; right: 20px; }
+#tokenomics { bottom: 20px; left: 20px; }
+#how-to-buy { bottom: 20px; right: 20px; }
 
 @media (max-width: 768px) {
     .container {
-        width: 80vw; /* Подстройка ширины под мобильные устройства */
-        height: 80vh; /* Подстройка высоты под мобильные устройства */
-        padding: 20px;
+        border-radius: 20%; /* Сохраняем закругленность, но делаем ее менее выраженной */
+        padding: 10px;
+        max-width: 90%; /* Увеличиваем максимальную ширину для мобильных устройств */
+        min-height: auto; /* Авто-высота для адаптации под контент */
+        transform: rotate(0deg); /* Убираем поворот для мобильных устройств */
     }
 
     .button {
-        font-size: 14px; /* Подстройка размера шрифта кнопок для мобильных */
+        font-size: 14px; /* Меньший размер текста для кнопок на мобильных */
+        padding: 8px 16px; /* Меньшие отступы для кнопок на мобильных */
     }
 }
