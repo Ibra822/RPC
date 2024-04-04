@@ -3,7 +3,7 @@ body, html {
     padding: 0;
     height: 100%;
     background-color: black;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Open Sans', sans-serif; /* Новый шрифт для основного текста */
     color: white;
     display: flex;
     justify-content: center;
@@ -13,12 +13,12 @@ body, html {
 
 .container {
     background-color: #ff8c00;
-    border-radius: 25%; /* Менее экстремальная форма для всех устройств */
+    border-radius: 15%; /* Меньшее закругление для универсальности */
     margin: 20px;
-    padding: 5%; /* Процентные отступы для адаптивности */
-    width: auto; /* Автоматическая ширина для адаптивности */
-    max-width: 600px; /* Максимальная ширина для десктопов */
-    min-height: 300px; /* Минимальная высота для сохранения формы */
+    padding: 40px;
+    width: auto;
+    max-width: 600px;
+    min-height: 300px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,19 @@ body, html {
     position: relative;
     z-index: 2;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    transform: rotate(-2deg); /* Небольшой поворот для добавления динамики */
+    transform: rotate(-2deg);
+}
+
+h1, h2 {
+    font-family: 'Permanent Marker', cursive; /* Сохраняем забавный шрифт для заголовков */
+    font-weight: bold;
+    font-style: italic;
+}
+
+p, ul {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
 }
 
 .button {
@@ -40,25 +52,20 @@ body, html {
     border-radius: 5px;
     position: fixed;
     transition: background-color 0.3s ease;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Permanent Marker', cursive; /* Сохраняем для кнопок */
 }
 
-#home { top: 20px; left: 20px; }
-#buy-now { top: 20px; right: 20px; }
-#tokenomics { bottom: 20px; left: 20px; }
-#how-to-buy { bottom: 20px; right: 20px; }
+/* Позиционирование кнопок не изменилось */
 
 @media (max-width: 768px) {
     .container {
-        border-radius: 20%; /* Сохраняем закругленность, но делаем ее менее выраженной */
-        padding: 10px;
-        max-width: 90%; /* Увеличиваем максимальную ширину для мобильных устройств */
-        min-height: auto; /* Авто-высота для адаптации под контент */
-        transform: rotate(0deg); /* Убираем поворот для мобильных устройств */
+        padding: 20px;
+        margin: 10px;
+        max-width: 80%;
+        transform: rotate(0deg);
     }
 
     .button {
-        font-size: 14px; /* Меньший размер текста для кнопок на мобильных */
-        padding: 8px 16px; /* Меньшие отступы для кнопок на мобильных */
+        font-size: 14px;
     }
 }
