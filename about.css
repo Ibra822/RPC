@@ -2,76 +2,79 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: black;
-    font-family: 'Indie Flower', cursive;
-    color: white;
+    background-color: black; /* Черный фон */
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
+    font-family: 'Indie Flower', cursive; /* Причудливый шрифт для всего контента */
+    color: white;
+    overflow: hidden;
 }
 
 .content-wrapper {
     position: relative;
     width: 100%;
-    max-width: 800px;
-    padding: 1rem;
-    box-sizing: border-box;
+    max-width: 900px; /* Увеличенная максимальная ширина обертки */
+    margin: 20px;
 }
 
 .text-box {
-    background-color: #ffa500;
-    padding: 20px;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    position: relative;
-    text-align: left;
-    overflow: auto; /* Добавлено для возможности прокрутки */
+    background-color: #ffa500; /* Оранжевый фон текстового блока */
+    padding: 30px; /* Увеличенные padding */
+    border-radius: 20px; /* Более округлые углы текстового блока */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Тень для текстового блока */
+    text-align: left; /* Выравнивание текста по левому краю */
 }
 
 .back-button {
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: 0;
+    left: 0;
     padding: 10px 15px;
-    background-color: #ff4500;
+    background-color: #ff4500; /* Оранжевый фон кнопки 'Back' */
     color: white;
     text-decoration: none;
     border-radius: 5px;
     font-family: 'Indie Flower', cursive;
-    z-index: 10;
+    z-index: 10; /* Убедимся, что кнопка находится над другими элементами */
 }
 
-h1, h2, .highlight {
-    font-family: 'Game On', cursive;
-    font-weight: bold;
-    color: #FFFFFF;
-    text-align: center;
-}
-
-p, ul, li {
-    font-family: 'Cheesecake', cursive;
-    font-weight: normal;
-    color: #333333;
-    margin-bottom: 0.5rem;
+h1, .highlight {
+    color: #FFFFFF; /* Цвет текста заголовка и выделенных элементов */
+    font-weight: bold; /* Жирное начертание */
 }
 
 @media (max-width: 768px) {
+    body, html {
+        height: auto; /* Позволяем содержимому определять высоту страницы */
+        min-height: 100%; /* Устанавливаем минимальную высоту */
+    }
+
+    .content-wrapper {
+        width: 95%; /* Уменьшаем ширину обертки для большей адаптивности */
+        max-width: 95%; /* Проценты обеспечивают лучшую адаптивность */
+        margin: 0; /* Убираем margin для предотвращения выхода за края */
+        padding-top: 50px; /* Добавляем пространство для верхней кнопки */
+    }
+
     .text-box {
-        padding: 15px;
-        margin-top: 3rem; /* Добавляем пространство для верхней кнопки */
-        border-radius: 20px;
-    }
-
-    h1, h2, .highlight {
-        font-size: 5vw; /* Уменьшаем размер шрифта для заголовков */
-    }
-
-    p, ul, li {
-        font-size: 4vw; /* Уменьшаем размер шрифта для текста */
+        padding: 15px; /* Уменьшенные padding */
+        max-height: 80vh; /* Ограничиваем максимальную высоту */
+        overflow-y: auto; /* Добавляем прокрутку при переполнении */
     }
 
     .back-button {
-        font-size: 4vw;
+        font-size: 5vw; /* Уменьшаем размер шрифта кнопки 'Back' */
+        padding: 10px; /* Уменьшаем padding кнопки */
+        top: 10px; /* Убираем из верхнего угла, чтобы не перекрывать текст */
+        left: 10px; /* Убираем из левого угла, чтобы не перекрывать текст */
+    }
+
+    h1, .highlight {
+        font-size: 18px; /* Фиксированный размер шрифта для заголовков */
+    }
+
+    p, ul, li {
+        font-size: 16px; /* Фиксированный размер шрифта для текста */
     }
 }
