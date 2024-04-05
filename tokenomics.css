@@ -14,7 +14,7 @@ body {
 }
 
 .back-button {
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 20px;
     background-color: #ff4500; /* Оранжевый фон кнопки 'Back' */
