@@ -37,7 +37,7 @@ body, html {
 
 .paw-button {
     display: inline-block;
-    background-image: url('paw.webp');
+    background-image: url('paw.png');
     background-size: cover;
     width: 390px; /* Увеличенный размер */
     height: 390px; /* Увеличенный размер */
