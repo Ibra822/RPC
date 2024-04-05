@@ -28,15 +28,15 @@ body, html {
 
 .back-button {
     position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px 15px;
+    top: 20px;
+    left: 20px;
     background-color: #ff4500; /* Оранжевый фон кнопки 'Back' */
     color: white;
     text-decoration: none;
+    padding: 10px 20px;
     border-radius: 5px;
-    font-family: 'Luckiest Guy', cursive;
-    z-index: 10; /* Убедимся, что кнопка находится над другими элементами */
+    font-size: 18px;
+    z-index: 100;
 }
 
 h1, .highlight {
