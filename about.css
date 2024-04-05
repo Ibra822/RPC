@@ -20,12 +20,33 @@ body, html {
 
 .text-box {
     background-color: #ffa500; /* Оранжевый фон текстового блока */
-    padding: 20px 50px; /* Увеличенные padding */
+    padding: 40px 80px; /* Увеличиваем padding */
     border-radius: 20px; /* Более округлые углы текстового блока */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Тень для текстового блока */
     text-align: left; /* Выравнивание текста по левому краю */
-    max-width: 100%; /* Позволяем боксу быть шире на десктопе */
-    margin: auto; 
+    width: calc(100% - 100px); /* Увеличиваем ширину с учетом паддинга, чтобы избежать выхода за пределы экрана */
+    margin: 50px auto; /* Увеличиваем верхний и нижний отступы */
+    overflow: hidden; /* Для предотвращения выхода контента за рамки бокса */
+}
+
+.text-box h1,
+.text-box h2 {
+    color: white; /* Цвет текста заголовков */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Тень для текста заголовков для лучшей читаемости */
+}
+
+.text-box ul {
+    padding-left: 40px; /* Увеличиваем отступ слева для списка */
+}
+
+.text-box li {
+    margin-bottom: 20px; /* Увеличиваем отступ между пунктами списка */
+    list-style-position: inside; /* Для корректного отображения маркеров внутри паддинга */
+}
+
+.important {
+    font-weight: bold; /* Делаем текст жирным */
+    color: black; /* Цвет текста */
 }
 
 .back-button {
@@ -60,11 +81,18 @@ h1, .highlight {
     }
 
     .text-box {
-        padding: 15px; /* Уменьшенные padding */
-        max-height: 80vh; /* Ограничиваем максимальную высоту */
-        overflow-y: auto; /* Добавляем прокрутку при переполнении */
+        padding: 20px; /* Уменьшаем padding на мобильных устройствах */
+        width: auto; /* Автоматическая ширина на мобильных устройствах */
     }
 
+    .text-box ul {
+        padding-left: 20px; /* Уменьшаем отступ для мобильных */
+    }
+
+    .text-box li {
+        margin-bottom: 15px; /* Уменьшаем отступ между пунктами списка для мобильных */
+    }
+    
     .back-button {
         font-size: 5vw; /* Уменьшаем размер шрифта кнопки 'Back' */
         padding: 10px; /* Уменьшаем padding кнопки */
