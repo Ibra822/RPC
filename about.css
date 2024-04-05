@@ -14,16 +14,18 @@ body, html {
 .content-wrapper {
     position: relative;
     width: 100%;
-    max-width: 1125px; /* Увеличенная максимальная ширина обертки */
-    margin: 20px;
+    max-width: 70%; /* Увеличенная максимальная ширина обертки */
+    margin: 20px auto;
 }
 
 .text-box {
     background-color: #ffa500; /* Оранжевый фон текстового блока */
-    padding: 37.5px; /* Увеличенные padding */
+    padding: 20px 50px; /* Увеличенные padding */
     border-radius: 20px; /* Более округлые углы текстового блока */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Тень для текстового блока */
     text-align: left; /* Выравнивание текста по левому краю */
+    max-width: 100%; /* Позволяем боксу быть шире на десктопе */
+    margin: auto; 
 }
 
 .back-button {
