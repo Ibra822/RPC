@@ -40,7 +40,7 @@ body, html {
     background-image: url('paw.webp');
     background-size: cover;
     width: 350px; /* Увеличенный размер */
-    height: 350px; /* Увеличенный размер */
+    height: 390px; /* Увеличенный размер */
     text-align: center;
     line-height: 200px; /* Вертикальное центрирование может потребовать корректировки */
     color: white;
@@ -53,7 +53,7 @@ body, html {
 
 .button-text {
     position: relative;
-    top: 58%; /* Сдвигаем текст ниже от его центрального положения */
+    top: 60%; /* Сдвигаем текст ниже от его центрального положения */
     transform: translateY(-50%);
     display: inline-block;
     text-align: center;
