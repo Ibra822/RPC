@@ -1,32 +1,63 @@
-.tokenomics-section {
-    text-align: center;
-    background-color: orange; /* Оранжевый фон для всей секции */
-    padding: 40px 0; /* Вертикальный отступ для секции */
-    border-radius: 10px;
-    width: 100%; /* Ширина на весь экран */
-    margin: auto;
-    font-family: 'Luckiest Guy', cursive; /* Забавный и объемный шрифт */
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Luckiest Guy', cursive;
 }
 
-.token-stats {
+.tokenomics-container {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center; /* Центрирование контейнеров */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
 }
 
-.token-stat {
-    background-color: transparent; /* Убираем белый фон */
-    color: black; /* Цвет текста */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    z-index: 100;
+}
+
+.tokenomics-box {
+    background-color: orange;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+
+.stats-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.stat {
+    background-color: white;
     padding: 20px;
     border-radius: 5px;
-    font-size: 28px; /* Увеличенный размер шрифта для текста */
-    width: 80%; /* Широкие контейнеры, можно корректировать */
-    box-shadow: none; /* Убираем тень */
+    font-size: 24px;
+    color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px; /* Or adjust based on content */
 }
 
 @media (max-width: 768px) {
-    .token-stats {
-        width: 95%; /* Адаптируем ширину для мобильных устройств */
+    .stats-container {
+        grid-template-columns: 1fr;
     }
 }
