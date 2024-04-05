@@ -6,7 +6,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Indie Flower', cursive; /* Причудливый шрифт для всего контента */
+    font-family: 'Luckiest Guy', cursive; /* Причудливый шрифт для всего контента */
     color: white;
     overflow: hidden;
 }
