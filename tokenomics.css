@@ -35,7 +35,7 @@ body {
     width: 100%;
 }
 
-.tokenomics-section h2 {
+.tokenomics-box h2 {
     color: white; /* Меняем цвет надписи на белый */
     font-size: 36px; /* Увеличиваем размер шрифта */
     margin-bottom: 20px; /* Добавляем отступ снизу для визуального пространства */
