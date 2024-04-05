@@ -14,20 +14,20 @@ body, html {
 .content-wrapper {
     position: relative;
     width: 100%;
-    max-width: 900px; /* Увеличенная максимальная ширина обертки */
+    max-width: 1125px; /* Увеличенная максимальная ширина обертки */
     margin: 20px;
 }
 
 .text-box {
     background-color: #ffa500; /* Оранжевый фон текстового блока */
-    padding: 30px; /* Увеличенные padding */
+    padding: 37.5px; /* Увеличенные padding */
     border-radius: 20px; /* Более округлые углы текстового блока */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Тень для текстового блока */
     text-align: left; /* Выравнивание текста по левому краю */
 }
 
 .back-button {
-    position: absolute;
+    position: fixed;
     top: 20px;
     left: 20px;
     background-color: #ff4500; /* Оранжевый фон кнопки 'Back' */
