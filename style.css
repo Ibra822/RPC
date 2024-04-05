@@ -70,7 +70,7 @@ body, html {
 #buy-now {
     position: absolute;
     top: var(--buy-now-top, 20px);
-    right: var(--buy-now-right, 30px);
+    right: var(--buy-now-right, 20px);
 }
 
 #tokenomics {
