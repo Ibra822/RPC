@@ -62,9 +62,9 @@ body, html {
 
 /* Позиционирование кнопок в углах остается без изменений */
 #about { top: 20px; left: 40px; }
-#buy-now { top: 20px; right: 40px; }
+#buy-now { top: 20px; right: 60px; }
 #tokenomics { bottom: 20px; left: 20px; }
-#how-to-buy { bottom: 20px; right: 20px; }
+#how-to-buy { bottom: 20px; right: 60px; }
 
 .paw-button:hover {
     transform: scale(1.1);
