@@ -46,7 +46,8 @@ body, html {
 
 .important {
     font-weight: bold; /* Делаем текст жирным */
-    color: black; /* Цвет текста */
+    color: white; /* Меняем цвет текста на белый */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Тень для лучшей читаемости на оранжевом фоне */
 }
 
 .back-button {
