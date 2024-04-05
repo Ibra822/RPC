@@ -63,13 +63,13 @@ body, html {
 /* Устанавливаем начальное положение кнопок */
 #about {
     position: absolute;
-    top: var(--about-top, 20px);
+    top: var(--about-top, 10px);
     left: var(--about-left, 20px);
 }
 
 #buy-now {
     position: absolute;
-    top: var(--buy-now-top, 20px);
+    top: var(--buy-now-top, 10px);
     right: var(--buy-now-right, 20px);
 }
 
