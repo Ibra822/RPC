@@ -60,11 +60,30 @@ body, html {
     width: 100%;
 }
 
-/* Позиционирование кнопок в углах остается без изменений */
-#about { top: 20px; left: 40px; }
-#buy-now { top: 20px; right: 60px; }
-#tokenomics { bottom: 20px; left: 20px; }
-#how-to-buy { bottom: 20px; right: 60px; }
+/* Устанавливаем начальное положение кнопок */
+#about {
+    position: absolute;
+    top: var(--about-top, 20px);
+    left: var(--about-left, 40px);
+}
+
+#buy-now {
+    position: absolute;
+    top: var(--buy-now-top, 20px);
+    right: var(--buy-now-right, 60px);
+}
+
+#tokenomics {
+    position: absolute;
+    bottom: var(--tokenomics-bottom, 20px);
+    left: var(--tokenomics-left, 20px);
+}
+
+#how-to-buy {
+    position: absolute;
+    bottom: var(--how-to-buy-bottom, 20px);
+    right: var(--how-to-buy-right, 60px);
+}
 
 .paw-button:hover {
     transform: scale(1.1);
