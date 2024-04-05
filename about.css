@@ -35,7 +35,7 @@ body, html {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Luckiest Guy', cursive;
     z-index: 10; /* Убедимся, что кнопка находится над другими элементами */
 }
 
