@@ -64,13 +64,13 @@ body, html {
 #about {
     position: absolute;
     top: var(--about-top, 20px);
-    left: var(--about-left, 40px);
+    left: var(--about-left, 20px);
 }
 
 #buy-now {
     position: absolute;
     top: var(--buy-now-top, 20px);
-    right: var(--buy-now-right, 90px);
+    right: var(--buy-now-right, 30px);
 }
 
 #tokenomics {
@@ -82,7 +82,7 @@ body, html {
 #how-to-buy {
     position: absolute;
     bottom: var(--how-to-buy-bottom, 20px);
-    right: var(--how-to-buy-right, 90px);
+    right: var(--how-to-buy-right, 20px);
 }
 
 .paw-button:hover {
