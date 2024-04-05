@@ -1,43 +1,32 @@
 .tokenomics-section {
     text-align: center;
-    background-color: orange;
-    padding: 20px;
+    background-color: orange; /* Оранжевый фон для всей секции */
+    padding: 40px 0; /* Вертикальный отступ для секции */
     border-radius: 10px;
-    width: 60%; /* Or any width you prefer */
-    margin: auto; /* Centers the box */
+    width: 100%; /* Ширина на весь экран */
+    margin: auto;
+    font-family: 'Luckiest Guy', cursive; /* Забавный и объемный шрифт */
 }
 
 .token-stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 10px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
+    align-items: center; /* Центрирование контейнеров */
 }
 
 .token-stat {
-    background-color: white;
-    padding: 15px;
+    background-color: transparent; /* Убираем белый фон */
+    color: black; /* Цвет текста */
+    padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gives the 'raised' effect */
-}
-
-.stat-title {
-    font-size: 18px;
-    font-weight: bold;
-    display: block; /* Makes the title go on a new line */
-    color: orange; /* Orange text for titles */
-}
-
-.stat-value {
-    font-size: 16px;
-    color: black; /* Black text for values */
-    margin-top: 5px; /* Spacing between title and value */
+    font-size: 28px; /* Увеличенный размер шрифта для текста */
+    width: 80%; /* Широкие контейнеры, можно корректировать */
+    box-shadow: none; /* Убираем тень */
 }
 
 @media (max-width: 768px) {
     .token-stats {
-        grid-template-columns: 1fr; /* Stacks the stats on small screens */
+        width: 95%; /* Адаптируем ширину для мобильных устройств */
     }
 }
