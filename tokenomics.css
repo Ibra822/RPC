@@ -17,7 +17,7 @@ body {
     position: absolute;
     top: 20px;
     left: 20px;
-    background-color: orange;
+    background-color: #ff4500; /* Оранжевый фон кнопки 'Back' */
     color: white;
     text-decoration: none;
     padding: 10px 20px;
