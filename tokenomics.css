@@ -1,0 +1,43 @@
+.tokenomics-section {
+    text-align: center;
+    background-color: orange;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%; /* Or any width you prefer */
+    margin: auto; /* Centers the box */
+}
+
+.token-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.token-stat {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gives the 'raised' effect */
+}
+
+.stat-title {
+    font-size: 18px;
+    font-weight: bold;
+    display: block; /* Makes the title go on a new line */
+    color: orange; /* Orange text for titles */
+}
+
+.stat-value {
+    font-size: 16px;
+    color: black; /* Black text for values */
+    margin-top: 5px; /* Spacing between title and value */
+}
+
+@media (max-width: 768px) {
+    .token-stats {
+        grid-template-columns: 1fr; /* Stacks the stats on small screens */
+    }
+}
