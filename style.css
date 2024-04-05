@@ -70,7 +70,7 @@ body, html {
 #buy-now {
     position: absolute;
     top: var(--buy-now-top, 20px);
-    right: var(--buy-now-right, 40px);
+    right: var(--buy-now-right, 90px);
 }
 
 #tokenomics {
@@ -82,7 +82,7 @@ body, html {
 #how-to-buy {
     position: absolute;
     bottom: var(--how-to-buy-bottom, 20px);
-    right: var(--how-to-buy-right, 40px);
+    right: var(--how-to-buy-right, 90px);
 }
 
 .paw-button:hover {
