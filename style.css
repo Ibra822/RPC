@@ -45,7 +45,7 @@ body, html {
     line-height: 200px; /* Вертикальное центрирование может потребовать корректировки */
     color: white;
     text-decoration: none;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Luckiest Guy', cursive;
     font-size: 18px; /* Размер шрифта текста внутри лапки */
     position: absolute; /* Позиционирование элемента */
     transition: transform 0.3s ease;
