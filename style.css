@@ -79,7 +79,7 @@ body, html {
     left: var(--tokenomics-left, 20px);
 }
 
-#how-to-buy {
+#socials {
     position: absolute;
     bottom: var(--how-to-buy-bottom, 20px);
     right: var(--how-to-buy-right, 20px);
