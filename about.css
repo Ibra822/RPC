@@ -70,42 +70,38 @@ h1, .highlight {
 
 @media (max-width: 768px) {
     body, html {
-        margin: 0;
-        padding: 0;
-        overflow: hidden; /* Скрываем скролл на уровне всей страницы */
-        height: 100%; /* Устанавливаем высоту на 100% */
-        background-color: black; /* Задаем черный фон */
+        height: 100%; /* Определяем высоту страницы */
+        overflow: hidden; /* Скрываем любой скролл на уровне body и html */
+        background-color: black; /* Черный фон страницы */
     }
 
     .content-wrapper {
-        position: absolute; /* Используем абсолютное позиционирование */
+        position: fixed; /* Фиксированное позиционирование для возможности скролла внутри элемента */
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        margin: 0;
-        padding: 15px; /* Слегка уменьшаем паддинг, чтобы оставить место для скролла */
-        overflow-y: auto; /* Разрешаем вертикальный скролл */
-        box-sizing: border-box; /* Учитываем паддинг в общих размерах */
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Центрируем содержимое */
-        justify-content: flex-start; /* Выравнивание содержимого сверху */
+        padding: 20px; /* Отступы для создания эффекта внутреннего пространства */
+        overflow-y: auto; /* Включаем вертикальный скролл */
+        box-sizing: border-box; /* Включаем padding в общую ширину и высоту */
     }
 
     .text-box {
-        width: 100%; /* Занимает всю доступную ширину внутри .content-wrapper */
-        margin: 20px 0; /* Добавляем верхний и нижний отступы для эффекта скролла */
-        padding: 20px; /* Внутренние отступы */
-        background-color: #ffa500; /* Оранжевый фон */
-        border-radius: 15px; /* Закругляем углы */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Добавляем тень для визуального выделения */
+        max-width: 100%; /* Устанавливаем максимальную ширину, чтобы предотвратить выход за пределы */
+        margin: 0 auto; /* Центрирование внутри .content-wrapper */
+        padding: 20px; /* Дополнительные внутренние отступы */
+        background-color: #ffa500; /* Оранжевый фон бокса */
+        border-radius: 15px; /* Закругление углов */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Тень для визуального выделения */
+        width: auto; /* Автоматическая ширина для адаптации к содержимому */
+        height: auto; /* Автоматическая высота для адаптации к содержимому */
+        box-sizing: border-box; /* Включаем padding и border в общие размеры */
     }
 
     .back-button {
         position: fixed;
         top: 20px;
         left: 20px;
-        z-index: 101; /* Убедимся, что кнопка 'Back' видна поверх других элементов */
+        z-index: 101; /* Увеличиваем z-index для видимости над другими элементами */
     }
 }
