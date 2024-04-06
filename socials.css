@@ -16,7 +16,7 @@ body, html {
     position: fixed;
     top: 20px;
     left: 20px;
-    background-color: #ff4500;
+    background-color: #ff4500; /* Сохраняем цвет, указанный в вашем примере, или меняем на цвет из tokenomics, если он другой */
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -30,9 +30,11 @@ body, html {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    background-color: #ff4500; /* Оранжевый фон */
-    padding: 20px;
+    background-color: #ffa500; /* Цвет бокса из файла tokenomics */
+    padding: 40px; /* Увеличенные внутренние отступы */
     border-radius: 15px; /* Скругленные углы */
+    width: 80%; /* Увеличиваем ширину бокса */
+    max-width: 600px; /* Максимальная ширина для больших экранов */
 }
 
 .social-link {
@@ -45,5 +47,5 @@ body, html {
 }
 
 .social-link i {
-    font-size: 40px;
+    font-size: 40px; /* Размер иконок */
 }
