@@ -44,8 +44,14 @@ body, html {
     flex-direction: column;
     align-items: center;
     gap: 5px;
+    transition: transform 0.3s ease; /* Добавляем плавный переход для эффекта увеличения */
+}
+
+.social-link:hover {
+    transform: scale(1.2); /* Увеличиваем элемент на 20% при наведении */
 }
 
 .social-link i {
     font-size: 40px; /* Размер иконок */
+    /* Убираем transition с иконок, чтобы эффект увеличения применялся к всему .social-link */
 }
